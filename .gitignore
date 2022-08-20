@@ -1,3 +1,2 @@
 #ignore webpack generated files in dist/ and node_modules
 node_modules/
-dist/
