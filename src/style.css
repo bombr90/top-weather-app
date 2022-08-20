@@ -1,0 +1,115 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  /* border: 1px solid black; */
+}
+
+:root {
+  --backgroundColor: whitesmoke;
+  --mainColor: rgb(235, 235, 235);
+  --textColor: gray;
+}
+
+#container  {
+  display: grid;
+  grid-template-rows: 60px 400px 60px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+  background-color: var(--backgroundColor);
+  justify-content: center;
+  padding: 16px;
+  gap: 16px;
+  color: var(--textColor);
+}
+
+#header {
+  grid-area: header;
+  display:flex;
+  align-items: center;
+  justify-content:left;
+  padding: 16px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 16px;
+  gap: 16px;
+  background-color:var(--mainColor);
+  box-shadow: 4px 4px 8px lightgray;
+}
+
+#footer {
+  grid-area: footer;
+  display:flex;
+  gap: 6px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards  {
+  flex:1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  width:225px;
+  height:225px;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 8px;
+
+}
+
+input   {
+  padding: 6px 4px;
+
+}
+
+input:hover {
+  outline: auto;
+}
+
+form  {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+label   {
+  align-self: center;
+}
+
+fieldset{
+  display: flex;
+  gap: 4px;
+  padding:8px;
+}
+
+#location {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.image  {
+  grid-column: span 2;
+  width: 75px;
+  height: 75px;
+  align-self: center;
+  justify-self: center;
+}

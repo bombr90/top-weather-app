@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+<body>
+  <div id="container">
+    <header id="header">Weather App</header>
+    <div id="main">
+      <header id="location"></header>
+      <div id="cards">
+        <div class="card"></div>
+      </div>
+      <form action="#" onsubmit="return false" id="searchForm">
+        <fieldset>
+          <legend>Location</legend>
+          <input type="text" name="search" id="searchInput" placeholder="London, UK">
+          <button type="submit" id="searchButton">Search</button>
+        </fieldset>
+          <fieldset>
+            <legend>Units</legend>
+            <div>
+              <input type="radio" name="unit" id="metric" value="metric" checked>
+              <label for="metric">Metric (C)</label>
+            </div>
+            <div>
+              <input type="radio" name="unit" id="imperial" value="imperial">
+              <label for="imperial">Imperial (F)</label>
+            </div>
+          </fieldset>
+      </form>
+
+    </div>
+    <footer id="footer"> 
+      <span>Weather data provided by OpenWeather</span>
+      <span>&copy; Bombr 2022</span>
+    </footer>
+  </div>
+</body>
+</html>
