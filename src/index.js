@@ -38,7 +38,7 @@ function parseUnits() {
 async function getLocation(location, units) {
   try {
     let data = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=${units}&APPID=17049aa4ddcf341e5978b7577034c23a`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${units}&APPID=17049aa4ddcf341e5978b7577034c23a`,
       { mode: "cors" },
     );
     if (data.ok === false) return false;
@@ -77,7 +77,7 @@ function renderLocationHeader(data) {
 function renderWeatherIcon(code) {
   const icon = document.createElement('img');
   icon.classList.add('image');
-  icon.src = `http://openweathermap.org/img/w/${code}.png`;
+  icon.src = `https://openweathermap.org/img/w/${code}.png`;
   cards.firstElementChild.appendChild(icon);
 }
 
